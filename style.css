@@ -4,3 +4,4 @@
 @media(max-width:520px){.rsvp__form{grid-template-columns:1fr;padding:25px 20px}.field,.field--full{grid-column:1}.choices,.guest-counts{grid-template-columns:1fr}.details{padding-block:72px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .invitation__image{display:block;padding:10px;border:1px solid var(--ink);background:var(--white);box-shadow:0 30px 75px rgba(39,32,23,.18)}
+.details .detail-copy{font-size:18px}
