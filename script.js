@@ -1,4 +1,3 @@
-const LOCATION_URL = "https://share.google/dvuONBPlAgeGWWiHf";
 const WHATSAPP_NUMBER = "40723544064";
 
 const form = document.querySelector("#rsvp-form");
@@ -19,14 +18,14 @@ function buildMessage() {
   const note = noteInput.value.trim();
 
   if (selectedAttendance() === "no") {
-    return `Bună, Maria și Marius! Sunt ${guestName}. Din păcate, nu voi putea participa la nunta voastră din 21 august 2026, ora 16:00, la Experience Lyan Events, Cernica. Vă mulțumesc pentru invitație și vă doresc o zi minunată!${note ? `\n\nMesaj: ${note}` : ""}\n\nLocație: ${LOCATION_URL}`;
+    return `Bună, Maria și Marius! Sunt ${guestName}. Din păcate, nu voi putea participa la nunta voastră din 21 august 2026, ora 16:00, la Experience Lyan Events, Cernica. Vă mulțumesc pentru invitație și vă doresc o zi minunată!${note ? `\n\nMesaj: ${note}` : ""}`;
   }
 
   const adults = Number(adultsInput.value);
   const children = Number(childrenInput.value);
   const adultText = adults === 1 ? "1 adult" : `${adults} adulți`;
   const childText = children === 0 ? "" : children === 1 ? " și 1 copil" : ` și ${children} copii`;
-  return `Bună, Maria și Marius! Sunt ${guestName}. Confirm cu drag prezența la nunta voastră din 21 august 2026, ora 16:00, la Experience Lyan Events, Cernica. Vom fi ${adultText}${childText}.${note ? `\n\nMesaj: ${note}` : ""}\n\nLocație: ${LOCATION_URL}`;
+  return `Bună, Maria și Marius! Sunt ${guestName}. Confirm cu drag prezența la nunta voastră din 21 august 2026, ora 16:00, la Experience Lyan Events, Cernica. Vom fi ${adultText}${childText}.${note ? `\n\nMesaj: ${note}` : ""}`;
 }
 
 function refresh() {
