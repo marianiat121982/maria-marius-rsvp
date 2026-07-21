@@ -1,4 +1,5 @@
 name: Deploy RSVP to GitHub Pages
+# Publicarea este configurată prin GitHub Actions.
 
 on:
   push:
