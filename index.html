@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4efe5" />
+    <meta name="description" content="Invitație și confirmare de prezență la nunta Mariei și a lui Marius — 21 august 2026." />
+    <title>Maria &amp; Marius — 21 august 2026</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead__top">
+        <span>21 august 2026</span>
+        <strong>The Wedding Post</strong>
+        <span>Lyan Events</span>
+      </div>
+      <div class="masthead__edition">
+        <span>Ediție specială</span>
+        <span>Maria &amp; Marius</span>
+        <span>Cu drag, pentru voi</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__copy">
+          <p class="eyebrow">Save the date</p>
+          <h1>Maria <em>&amp;</em><br />Marius</h1>
+          <p class="hero__lead">
+            După o misiune desfășurată cu succes, am decis că aventura cea mare
+            merită sărbătorită împreună cu voi.
+          </p>
+          <a class="button" href="#confirmare">Confirmă prezența</a>
+        </div>
+
+        <figure class="invitation">
+          <a href="invitatie-maria-marius.jpeg" target="_blank" rel="noreferrer" aria-label="Deschide invitația la dimensiune completă">
+            <img src="invitatie-maria-marius.jpeg" width="1240" height="1748" alt="Invitația de nuntă Maria și Marius" />
+          </a>
+          <figcaption>Invitația noastră · apasă pentru a o mări</figcaption>
+        </figure>
+      </section>
+
+      <section class="details" aria-labelledby="details-title">
+        <div class="section-title">
+          <p class="eyebrow">Dosarul evenimentului</p>
+          <h2 id="details-title">Misiunea zilei: să spunem „DA”</h2>
+        </div>
+
+        <div class="details__grid">
+          <article>
+            <span class="number">01</span>
+            <p class="label">Când</p>
+            <h3>Vineri, 21 august 2026</h3>
+            <p>Vă așteptăm începând cu ora 16:00.</p>
+          </article>
+
+          <article class="details__location">
+            <span class="number">02</span>
+            <p class="label">Unde</p>
+            <h3>Experience Lyan Events</h3>
+            <p>Comuna Cernica, Strada Poștei nr. 1K</p>
+            <a href="https://share.google/dvuONBPlAgeGWWiHf" target="_blank" rel="noreferrer">Deschide locația ↗</a>
+          </article>
+
+          <article>
+            <span class="number">03</span>
+            <p class="label">Piscină &amp; relax</p>
+            <h3>Pregătiți pentru distracție</h3>
+            <p>Ținută lejeră, costum de baie, papuci chic și ochelari de soare.</p>
+          </article>
+        </div>
+      </section>
+
+      <aside class="quote">
+        Distracție cu TVA inclus, impozit pe veselie ZERO și friptură deductibilă doar dacă dansezi.
+      </aside>
+
+      <section class="rsvp" id="confirmare" aria-labelledby="rsvp-title">
+        <div class="rsvp__intro">
+          <p class="eyebrow">Răspunsul vostru</p>
+          <h2 id="rsvp-title">Ne bucurăm să știm dacă veniți</h2>
+          <p>
+            Completați detaliile, iar mesajul de confirmare va fi pregătit
+            automat în WhatsApp. Vă rugăm să răspundeți până la
+            <strong>1 august 2026</strong>.
+          </p>
+          <div class="contacts">
+            <span>Maria · 0723 544 064</span>
+            <span>Marius · 0766 865 816</span>
+          </div>
+        </div>
+
+        <form id="rsvp-form" class="rsvp__form">
+          <label class="field field--full">
+            <span>Numele vostru</span>
+            <input id="guest-name" name="guestName" type="text" placeholder="Ex: Familia Popescu" autocomplete="name" required />
+          </label>
+
+          <fieldset class="attendance field--full">
+            <legend>Veți fi alături de noi?</legend>
+            <div class="choices">
+              <label class="choice is-selected">
+                <input type="radio" name="attendance" value="yes" checked />
+                <span>Da, cu drag!</span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="attendance" value="no" />
+                <span>Nu pot ajunge</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div id="guest-counts" class="guest-counts field--full">
+            <label class="field">
+              <span>Număr adulți</span>
+              <select id="adults" name="adults">
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Număr copii</span>
+              <select id="children" name="children">
+                <option value="0">0</option><option value="1">1</option><option value="2">2</option>
+                <option value="3">3</option><option value="4">4</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="field field--full">
+            <span>Un gând pentru noi (opțional)</span>
+            <textarea id="note" name="note" rows="3" placeholder="Mesaj, meniu special sau alte detalii..."></textarea>
+          </label>
+
+          <div class="preview field--full" aria-live="polite">
+            <span>Mesajul pregătit</span>
+            <p id="message-preview"></p>
+          </div>
+
+          <button class="button button--full field--full" type="submit">Trimite confirmarea pe WhatsApp</button>
+          <p class="form-note field--full">Confirmarea este trimisă când apăsați „Trimite” în conversația cu Maria.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="monogram">M <em>&amp;</em> M</div>
+      <p>Cu drag, Maria &amp; Marius</p>
+      <small>P.S. Dacă zâmbetul nu e pregătit pentru poze, nașul vine cu detartrajul portabil. 😉</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
